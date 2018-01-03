@@ -21,7 +21,7 @@ function deepestChild(){
   //let current=
   //let next=[]
   for (let i=0;i<alldescendents.length;i++){
-    if (grandnode.querySelectorAll('*')[i].hasChildNodes()===false){
+    if (alldescendents[i].childElementCount===0){
       return grandnode.querySelectorAll('*')[i]
       //doesnt work because even [3].hasChildNodes= true!
       //but cant do [4] because only goes up to 3!
